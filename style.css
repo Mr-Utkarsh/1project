@@ -10,7 +10,8 @@ html,body {
     background-color: rgb(39, 38, 38);
 }
 nav{
-    position: absolute;
+    position: sticky;
+    top: 0px;
     top: 0;
     width: 100%;
     display: flex;
