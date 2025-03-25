@@ -7,19 +7,17 @@
 html,body {
     height: 100%;
     width: 100%;
-    background-color: rgb(39, 38, 38);
 }
 nav{
     position: sticky;
-    top: 0px;
     top: 0;
     width: 100%;
     display: flex;
     gap: 100px;
     align-items: center;
     height: 90px;
-    background-color: rgb(39, 38, 38);
-    color: #ffffff;
+    background-color: rgb(238, 231, 231);
+    color: rgb(163, 142, 142);
     border-bottom: 0.5px solid #ffffff;
     padding-left: 60px;
 }
@@ -46,32 +44,41 @@ nav .rnav{
 nav .rnav #fr{
     opacity: 0.6;
 }
+video{
+    width: 100%;
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    text-align: center;
 }
 .container .center{
-    color: #ffffff;
-    padding-top: 200px;
+    /* position: absolute; */
     line-height: 120px;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+}
+.container .center h1{
+    color: rgb(163, 142, 142);
+    padding-top: 70px;
+    gap: 50px;  
     height: 100%;
     width: 100%;
 }
+.container .center h2{
+    color: rgb(163, 142, 142);
+    font-family: SuisseIntl, helvetica, "sans-serif";
+}
 .container .center p{
-    line-height: 50px;
+    margin-top: 30px;
+    line-height: 30px;
+    color: rgb(163, 142, 142);
 }
 button{
-   background-color: rgb(39, 38, 38);
-   border: 0.5px solid #ffffff;
-   height: 50px;
-   width: 120px;
+  
+   border: 0.5px solid rgb(163, 142, 142);
+   height: 45px;
+   width: 140px;
    padding: 12px;
-   color: #ffffff;
+   color: rgb(163, 142, 142);
+   font-size: 11px;
 }
