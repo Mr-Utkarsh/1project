@@ -21,11 +21,12 @@ nav{
     border-bottom: 0.5px solid #ffffff;
     padding-left: 60px;
 }
-nav .lnav{
+nav ul{
     display: flex;
     gap: 25px;
     font-weight: 400;
     font-family: 'Courier New', Courier, monospace;
+    list-style: none;
 }
 nav .mnav{
     font-size: 30px;
@@ -127,4 +128,33 @@ button{
 .grid{
     background-color: #49111C;
     border: 1px solid white;
+}
+#click:checked~nav ul{
+    display: block;
+}
+nav label{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    nav label{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        position: absolute;
+        top: 80px;
+       
+        background-color: red;
+        width: 100%;
+        
+    }
+    .lnav ul li{
+        padding: 10px;
+        position: absolute;
+        left: 20px;
+        background-color: red;
+    }
+}
+#click{
+    display: none;
 }
