@@ -5,7 +5,6 @@
 }
 
 html,body {
-    height: 100%;
     width: 100%;
 }
 nav{
@@ -16,7 +15,7 @@ nav{
     gap: 55px;
     align-items: center;
     height: 70px;
-    background-color: #49111C;
+    background-color: #49111c;
     color: #D8E2EE;
     border-bottom: 0.5px solid #ffffff;
     padding-left: 60px;
@@ -97,8 +96,6 @@ button{
    border-radius: 20px;
 }
 .container2{
-    position: absolute;
-    top: 100%;
     background-color: black;
     height: 220%;
     width: 100%;
@@ -157,4 +154,14 @@ nav label{
 }
 #click{
     display: none;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px;
+    background-color: #49111C;
+}
+footer h5{
+    font-size: 40px;
 }
