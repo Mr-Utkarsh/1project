@@ -165,3 +165,6 @@ footer{
 footer h5{
     font-size: 40px;
 }
+@media screen and (max-width:400px) and (max-width:750px){
+    
+}
