@@ -6,6 +6,7 @@
 
 html,body {
     width: 100%;
+    height: 100%;
 }
 nav{
     position: sticky;
@@ -99,6 +100,7 @@ button{
     display: flex;
     justify-content:center;
     align-items: center;
+    padding-top: 150px;
     width: 100%;
     background-color: #49111C;
 }
@@ -107,18 +109,19 @@ button{
     width: 600px;
 }
 .container2 .vidc{
-    margin-top: 10%;
     height: 950px;
     width: 600px;
 }
 .container3{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #D8E2EE;
-    height: 220%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .container3 .txt h4{
     color: black;
@@ -133,17 +136,33 @@ button{
     
 }
 .grids{
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: auto auto auto;
     display: grid;
-    
+    gap: 30px;  
 }
-.grid{
-    background-size:auto;
-    background-position: center;
-    object-fit: cover;
-    overflow: hidden;
-    border: 5px solid white;
+.grids .grid1 img{
+    height: 400px;
+}
+.grids .grid2 img{
+    height: 400px;
+}
+.grids .grid3 img{
+    height: 400px;
+}
+.grids .grid4 img{
+    height: 400px;
+}
+.grids .grid5 img{
+    height: 400px;
+}
+.grids .grid6 img{
+    height: 400px;
+}
+.container3 .btn{
+    border-radius: 0;
+    width: 100px;
+    background-color: #D8E2EE;
+    color: black;
 }
 #click:checked~nav ul{
     display: block;
@@ -178,8 +197,9 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 100px;
-    background-color: #49111C;
+    padding: 20px;
+    border-top: 0.5px solid #49111C;
+    background-color: #D8E2EE;
 }
 footer h5{
     font-size: 40px;
