@@ -211,11 +211,27 @@ nav label{
     display: none;
 }
 .container4{
-    
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
+.container4 .a{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+.container4 .b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 100;
+    gap: 40px;
+    padding: 50px;
 }
 .container5{
     width: 100%;
     background-color: aliceblue;
+    padding-bottom: 100px;
 }
 .cont1{
     width: 70%;
@@ -260,8 +276,38 @@ nav label{
     border-radius: 0;
     margin-top: 20px;
     margin-bottom: 60px;
+    cursor: pointer;
 }
-
+footer{
+    background-color: #0a0908;
+    height: 30%;
+    color: #D8E2EE;
+}
+footer .f1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D8E2EE;
+    padding-top: 20px;
+    font-size: 20px;
+}
+footer .f1 h1{
+    font-size: 50px;
+    font-family: fantasy;
+    font-weight: 600;
+}
+footer .f2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+footer .f2 .lf{
+    display: flex;
+    font-weight: 100;
+    gap: 30px;
+}
 
 
 
