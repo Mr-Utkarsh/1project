@@ -28,12 +28,37 @@ nav ul{
     font-family: 'Courier New', Courier, monospace;
     list-style: none;
 }
+ul .underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: #d8e2ee;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+ ul .underline::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: #d8e2ee;
+    transition: width 0.3s ease-out;
+  }
+  
+ ul .underline:hover::after {
+    width: 100%;
+  }
 nav .mnav{
     font-size: 30px;
     font-family: fantasy;
     font-weight: 600;
     padding-left: 100px;
-    padding-top: 25px;
+    padding: 25px;
+    padding-top: 27px;
 }
 nav .rnav{
     display: flex;
@@ -100,7 +125,7 @@ button{
     display: flex;
     justify-content:center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 200px;
     width: 100%;
     background-color: #49111C;
 }
@@ -122,23 +147,31 @@ button{
     width: 100%;
     margin: 0;
     padding: 0;
+    line-height: 70px;
+    padding: 50px;
 }
 .container3 .txt h4{
     color: black;
     font-family: SuisseIntl, helvetica, "sans-serif";
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: 200;
 
 }
 .container3 .txt h3{
     color: black;
     font-family: SuisseIntl, helvetica, "sans-serif";
     font-size: 70px;
-    
+    font-weight: 200;
+    padding-top: 20px;
+    line-height: 100px;
 }
 .grids{
     grid-template-columns: auto auto auto;
     display: grid;
     gap: 30px;  
+    border: 1px solid black;
+    padding: 70px;
+    margin-top: 50px;
 }
 .grids .grid1 img{
     height: 400px;
@@ -158,11 +191,18 @@ button{
 .grids .grid6 img{
     height: 400px;
 }
-.container3 .btn{
+.container3 .shop{
     border-radius: 0;
     width: 100px;
     background-color: #D8E2EE;
     color: black;
+    margin: 30px;
+    cursor: pointer;
+}
+.shop:hover{
+    cursor: pointer;
+    background-color: #49111C;
+    color: #D8E2EE;
 }
 #click:checked~nav ul{
     display: block;
@@ -170,6 +210,66 @@ button{
 nav label{
     display: none;
 }
+.container4{
+    
+}
+.container5{
+    width: 100%;
+    background-color: aliceblue;
+}
+.cont1{
+    width: 70%;
+    margin-left: 100px;
+    line-height: 60px;
+}
+.cont1 h3{
+    font-size: 40px;
+    padding-top: 100px;
+}
+.cont1 h2{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-top: 50px;
+    line-height: 90px;
+}
+.cont2{
+    border: 1.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.cont2 h5{
+    font-size: 40px;
+    padding-top: 60px;
+}
+.cont2 h3{
+    font-size: 90px;
+    font-weight: 100;
+    padding: 20px;
+    font-family: SuisseIntl, helvetica, "sans-serif";
+}
+.cont2 button{
+    background-color: aliceblue;
+    width: 170px;
+    height: 50px;
+    color: black;
+    font-size: 12px;
+    border-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+/* responsive */
 @media screen and (max-width: 600px){
     nav label{
         display: block;
@@ -192,17 +292,6 @@ nav label{
 }
 #click{
     display: none;
-}
-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-    border-top: 0.5px solid #49111C;
-    background-color: #D8E2EE;
-}
-footer h5{
-    font-size: 40px;
 }
 @media screen and (max-width:400px) and (max-width:750px){
     
