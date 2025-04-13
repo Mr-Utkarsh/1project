@@ -279,9 +279,10 @@ nav label{
     cursor: pointer;
 }
 footer{
-    background-color: #0a0908;
+    background-color: #49111C;
     height: 30%;
     color: #D8E2EE;
+    padding: 30px;
 }
 footer .f1{
     display: flex;
