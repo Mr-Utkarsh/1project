@@ -7,6 +7,7 @@
 html,body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 nav{
     position: sticky;
@@ -88,9 +89,7 @@ video{
 }
 .container1 .center h1{
     color: #49111C;
-    gap: 50px;  
-    height: 80%;
-    width: 100%;
+    gap: 50px;
     font-size: 40px;
     font-family: SuisseIntl, helvetica, "sans-serif";
 }
@@ -102,6 +101,7 @@ video{
 .container1 .center h2{
     color: #49111C;
     font-family: SuisseIntl, helvetica, "sans-serif";
+    font-size: 150px;
 }
 .container1 .center p{
     margin-top: 30px;
@@ -109,8 +109,7 @@ video{
     color: #49111C;
     font-size: 30px;
 }
-button{
-  
+.container1 .center button{
    border: 0.5px solid #49111C;
    height: 45px;
    width: 140px;
@@ -120,6 +119,7 @@ button{
    border: 0.2px solid #49111C;
    background-color: #49111C;
    border-radius: 20px;
+   cursor: pointer;
 }
 .container2{
     display: flex;
@@ -310,12 +310,6 @@ footer .f2 .lf{
     gap: 30px;
 }
 
-
-
-
-
-
-
 /* responsive */
 @media screen and (max-width: 600px){
     nav label{
@@ -338,12 +332,136 @@ footer .f2 .lf{
 #click{
     display: none;
 }
-@media screen and (min-width:400px) and (max-width:750px){
-    .rnav{
-    display: flex;
+
+@media screen and (max-width: 768px){
+    nav {
+      align-items: flex-start;
+      height: auto;
+      padding-left: 20px;
     }
-    .container2{
-        display: flex;
-        flex-direction: column;
+    nav label i{
+        padding-top: 50px;
     }
-}
+    .logo{
+        padding-top: 35px;
+    }
+    nav .rnav {
+      padding-left: 20px;
+      padding-top: 20px;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    nav .mnav {
+      padding-left: 0;
+    }
+    nav .mnav h1{
+        font-size: 45px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      background-color: #49111C;
+      padding-left: 0;
+      margin-left: 0;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .container1 .center h1 {
+      font-size: 16px;
+    }
+    .container1 .center{
+        padding-top: 20px;
+        line-height: 20px;
+    }
+  
+    .container1 .center h1 span {
+      font-size: 40px;
+    }
+    .container1 .center h2{
+        color: #49111C;
+        font-family: SuisseIntl, helvetica, "sans-serif";
+        font-size: 45px;
+        line-height:40px;
+    }
+  
+    .container1 .center p {
+        margin-top: 5px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .container1 .center button{
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .grids {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+    .grids {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .cont1 {
+      margin-left: 20px;
+      width: 90%;
+    }
+  
+    .cont1 h2 {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  
+    .cont1 h3 {
+      font-size: 20px;
+    }
+    .cont2{
+        line-height: 30px;
+    }
+    .cont2 h5{
+        font-size: 20px;
+    }
+    .cont2 h3{
+        font-size: 45px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .container2 {
+      flex-direction: column;
+      padding-top: 50px;
+    }
+  
+    .container2 .imgc,
+    .container2 .vidc {
+      width: 100%;
+      height: auto;
+    }
+    .container3 button{
+        height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    footer{
+        padding: 10px;
+    }
+    footer .f1 h6,h1{
+        font-size: 10px;
+    }
+    footer .f2 .lf h5{
+        font-size: 10px;
+    }
+    footer .f2 .rf{
+        font-size: 10px;
+    }
+  }
