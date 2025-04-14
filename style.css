@@ -325,21 +325,25 @@ footer .f2 .lf{
         display: none;
         position: absolute;
         top: 80px;
-       
-        background-color: red;
-        width: 100%;
-        
+        background-color: #49111C;
+        height: 20px;
+        padding-bottom: 30px;
     }
     .lnav ul li{
         padding: 10px;
         position: absolute;
         left: 20px;
-        background-color: red;
     }
 }
 #click{
     display: none;
 }
-@media screen and (max-width:400px) and (max-width:750px){
-    
+@media screen and (min-width:400px) and (max-width:750px){
+    .rnav{
+    display: flex;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
 }
