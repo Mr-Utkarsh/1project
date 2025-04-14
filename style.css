@@ -154,6 +154,19 @@ html,body {
     padding: 70px;
     margin-top: 50px;
 }
+.grids .price{
+    display: flex;
+    justify-content: space-between;
+}
+.grids h5{
+    font-size: 20px;
+    line-height: 10px;
+}
+.grids h6{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
 .grids .grid1 img{
     height: 400px;
 }
@@ -394,7 +407,11 @@ footer .f2 .lf{
   @media screen and (max-width: 460px){
     .grids {
       grid-template-columns: auto;
-      padding: 40px;
+      padding: 10px;
+    }
+    .grids .price{
+        padding-left: 30px;
+        padding-right: 30px;
     }
   }
 
