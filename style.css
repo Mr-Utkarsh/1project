@@ -9,7 +9,7 @@ html,body {
     height: 100%;
     overflow-x: hidden;
 }
-nav{
+.navbar{
     position: sticky;
     top: 0;
     width: 100%;
@@ -22,53 +22,33 @@ nav{
     border-bottom: 0.5px solid #ffffff;
     padding-left: 60px;
 }
-nav ul{
+.navbar #ul{
     display: flex;
     gap: 25px;
+    height: 130px;
     font-weight: 400;
     font-family: 'Courier New', Courier, monospace;
     list-style: none;
+    padding-top: 60px;
+
 }
-ul .underline {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-    cursor: pointer;
-    color: #d8e2ee;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
- ul .underline::after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 0%;
-    background-color: #d8e2ee;
-    transition: width 0.3s ease-out;
-  }
-  
- ul .underline:hover::after {
-    width: 100%;
-  }
-nav .mnav{
+.navbar .mnav{
     font-size: 30px;
     font-family: fantasy;
     font-weight: 600;
     padding-left: 100px;
     padding: 25px;
-    padding-top: 27px;
+    padding-top: 30px;
 }
-nav .rnav{
+.navbar .rnav{
     display: flex;
     gap: 25px;
     font-weight: 400;
     font-family: 'Courier New', Courier, monospace;
     padding-left: 320px;
+    padding-top: 10px;
 }
-nav .rnav #fr{
+.navbar .rnav #fr{
     opacity: 0.6;
 }
 video{
@@ -206,8 +186,9 @@ video{
     background-color: #49111C;
     color: #D8E2EE;
 }
-#click:checked~nav ul{
+#click:checked~.navbar ul{
     display: block;
+    
 }
 nav label{
     display: none;
@@ -253,11 +234,13 @@ nav label{
 }
 .cont2{
     border: 1.5px solid black;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
+    margin-left: 10%;
 }
 .cont2 h5{
     font-size: 40px;
@@ -317,15 +300,14 @@ footer .f2 .lf{
     nav label{
         display: block;
     }
-    nav ul{
+    .navbar #ul{
         display: none;
         position: absolute;
         top: 80px;
         background-color: #49111C;
         height: 20px;
-        padding-bottom: 30px;
     }
-    .lnav ul li{
+    .lnav #ul li{
         padding: 10px;
         position: absolute;
         left: 20px;
@@ -336,44 +318,48 @@ footer .f2 .lf{
 }
 
 @media screen and (max-width: 460px){
-    nav {
+    .navbar{
       align-items: flex-start;
       height: auto;
       padding-left: 20px;
+      gap: 40px;
     }
-    nav label i{
+    .navbar label i{
         padding-top: 50px;
     }
     .logo{
         padding-top: 35px;
     }
-    nav .rnav {
+
+    .navbar .mnav {
+        padding-left: 2px;
+      }
+      .navbar .mnav h1{
+          font-size: 45px;
+      }
+    .navbar .rnav {
       padding-left: 5px;
       padding-top: 20px;
       flex-direction: column;
       gap: 15px;
     }
-  
-    nav .mnav {
-      padding-left: 0;
-    }
-    nav .mnav h1{
-        font-size: 45px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-      background-color: #49111C;
-      padding-left: 0;
-      margin-left: 0;
-      gap: 10px;
+    .navbar #ul{
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    width: 180px;
+    background-color: #49111C;
+    padding: 0;
+    padding-left: 20px;
+    line-height: 30px;
     }
   }
 
   @media screen and (max-width: 460px){
     .container1 .center h1 {
       font-size: 16px;
+      padding-top: 10px;
     }
     .container1 .center{
         padding-top: 20px;
@@ -408,6 +394,7 @@ footer .f2 .lf{
   @media screen and (max-width: 460px){
     .grids {
       grid-template-columns: auto;
+      padding: 40px;
     }
   }
 
@@ -427,12 +414,15 @@ footer .f2 .lf{
     }
     .cont2{
         line-height: 30px;
+        width: 80%;
     }
     .cont2 h5{
-        font-size: 20px;
+        font-size: 25px;
     }
     .cont2 h3{
-        font-size: 45px;
+        font-size: 70px;
+        line-height: 70px;
+        text-align: center;
     }
   }
 
@@ -450,7 +440,6 @@ footer .f2 .lf{
     .container3 button{
         height: 35px;
     }
-  }
 
   @media screen and (max-width: 460px){
     footer{
@@ -466,3 +455,4 @@ footer .f2 .lf{
         font-size: 10px;
     }
   }
+}
