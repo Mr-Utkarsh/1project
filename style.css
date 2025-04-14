@@ -335,7 +335,7 @@ footer .f2 .lf{
     display: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 460px){
     nav {
       align-items: flex-start;
       height: auto;
@@ -348,7 +348,7 @@ footer .f2 .lf{
         padding-top: 35px;
     }
     nav .rnav {
-      padding-left: 10px;
+      padding-left: 5px;
       padding-top: 20px;
       flex-direction: column;
       gap: 15px;
@@ -371,7 +371,7 @@ footer .f2 .lf{
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 460px){
     .container1 .center h1 {
       font-size: 16px;
     }
@@ -405,13 +405,13 @@ footer .f2 .lf{
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 460px){
     .grids {
       grid-template-columns: auto;
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 460px){
     .cont1 {
       margin-left: 20px;
       width: 90%;
@@ -436,7 +436,7 @@ footer .f2 .lf{
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 460px){
     .container2 {
       flex-direction: column;
       padding-top: 50px;
@@ -452,7 +452,7 @@ footer .f2 .lf{
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 460px){
     footer{
         padding: 10px;
     }
