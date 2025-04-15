@@ -200,10 +200,12 @@ html,body {
     color: #D8E2EE;
 }
 #click:checked~.navbar ul{
-    display: block;
-    
+    display: block;   
 }
 nav label{
+    display: none;
+}
+#click{
     display: none;
 }
 .container4{
@@ -325,9 +327,6 @@ footer .f2 .lf{
         position: absolute;
         left: 20px;
     }
-}
-#click{
-    display: none;
 }
 
 @media screen and (max-width: 460px){
